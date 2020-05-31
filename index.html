@@ -8,7 +8,11 @@
 </head>
 
 <body>
-  请输入你的名字：<input type="text">
+  <form id="registSubmit" enctype="multipart/form-data" action="/dataTable/uploading" method="post" target="form_iframe"
+    onclick="saveReport()">
+    输入名字：<input type="text" id="file" name="file1" />
+    <input type="submit" id="id_submit" name="id_submit" value="上传" />
+  </form>
 </body>
 
 </html>
