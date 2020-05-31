@@ -8,15 +8,17 @@
 </head>
 
 <body>
-  <form id="registSubmit" enctype="multipart/form-data" action="https://zhouhuazhen.github.io/project/text.html"
-    method="get" target="form_iframe" onclick="saveReport()">
-    输入名字：<input type="text" id="file" name="file1" />
+  <!-- <form id="registSubmit" enctype="multipart/form-data" action="https://zhouhuazhen.github.io/project/text.html" -->
+  <form id="registSubmit" enctype="multipart/form-data" method="get" target="form_iframe" onclick="saveReport()">
+    12输入名字：<input type="text" id="file" name="file1" />
     <input type="submit" id="id_submit" name="id_submit" value="提交" />
   </form>
 
   <script language="javascript">
-    // var value_text = $("#file").val();
-    // console.log(value_text)
+    function saveReport() {
+      var value_text = $("#registSubmit").val();
+    }
+    console.log(value_text)
   </script>
 </body>
 
